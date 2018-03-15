@@ -12,7 +12,6 @@ In order to help Zigy you have to:
 - [ ] Implement `Main` class.
 - [ ] You are allowed to implement your own classes. Remember about clean code.
 - [ ] Explain why Linus designed some methods to be static methods instead of instance methods.
-- [ ] Remember about comments.
 - [ ] Add UML.png file containing UML class diagram of classes from `shapes` and `containers` packages
 - [ ] Focus most on the OOP not the ui.
 
@@ -253,6 +252,5 @@ If you've fulfilled all the basic requirements and you're ambitious enough to co
 
 Help Zigy even more and implement quiz feature. This feature should generate random shape. Tell the user the type of shape and it's attributes. The user should calculate the perimeter and area. The program should check users answer.
 
-Visualize shapes using [turtle]() library.
 
 You can also add more shapes to the geometry class.
