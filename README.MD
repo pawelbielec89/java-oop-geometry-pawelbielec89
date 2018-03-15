@@ -64,9 +64,9 @@ This is a so called _abstract class_. It means that we don't create instances of
 
 #### Instance methods
 
-##### ```float getArea()```
+##### ```double getArea()```
 Returns the area of the shape.
-##### ```float getPerimeter()```
+##### ```double getPerimeter()```
 Returns the perimeter of the shape.
 ##### ```String toString()```
 Returns information about given shape as string.

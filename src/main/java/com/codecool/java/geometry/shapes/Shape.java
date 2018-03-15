@@ -11,17 +11,13 @@ public abstract class Shape {
      * Calculates shape's area.
      * @return area of the shape
      */
-    public float getArea() {
-        throw new NotImplementedException();
-    }
+    public abstract double getArea();
 
     /**
      * Calculates shape's perimeter.
      * @return perimeter of the shape
      */
-    public float getPerimeter() {
-        throw new NotImplementedException();
-    }
+    public abstract double getPerimeter();
 
     /**
      * Returns information about the shape as string.
@@ -45,7 +41,7 @@ public abstract class Shape {
      * Returns formula for the area of the shape as a string.
      * @return area formula
      */
-    public static  String getAreaFormula() {
+    public static String getAreaFormula() {
         throw new NotImplementedException();
     }
 
