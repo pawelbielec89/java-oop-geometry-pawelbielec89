@@ -209,12 +209,19 @@ This class is meant to hold geometrical shapes (objects that inherit from Shape 
 ##### `ShapeList()`
 Constructs ShapeList object
 
-##### `addShape(Shape shape)`
-Adds shape to shapes list. This method should check if shape's has Shape class as it's ancestor. If not it should raise `TypeError`. Hint: check `isinstance` function. (This is a good example of so called _polymorphism_)
+##### `void addShape(Shape shape)`
+Adds shape to shapes list.
 ######  Arguments
 * `shape`
-  * data_type: Shape
   * description: object to be added to the shapes list
+  
+##### `Shape getShapeAt(int index)`
+Gets shape stored in `shapes` list under specified index.
+######  Arguments
+* `index`
+  * description: index of element to be returned
+###### Return value
+`String` object
 
 ##### `String getShapesTable()`
 This method returns shapes list as string formatted into table. This is sample output:  
@@ -231,12 +238,12 @@ This method returns shapes list as string formatted into table. This is sample o
 `String` object
 
 ##### `getLargestShapeByPerimeter()`
-Returns shape with largest perimeter. Hint: have a look at [comparison methods]( )
+Returns shape with largest perimeter.
 ###### Return value
 `Shape` object
 
 ##### `getLargestShapeByArea()`
-Returns shape with largest area. Hint: have a look at [comparison methods]( )
+Returns shape with largest area.
 ###### Return value
 `Shape` object
 
