@@ -11,21 +11,13 @@ public abstract class Shape {
      * Calculates shape's area.
      * @return area of the shape
      */
-    public abstract double getArea();
+    public abstract double calculateArea();
 
     /**
      * Calculates shape's perimeter.
      * @return perimeter of the shape
      */
-    public abstract double getPerimeter();
-
-    /**
-     * Returns information about the shape as string.
-     * @return information bout shape
-     */
-    public String toString() {
-        throw new NotImplementedException();
-    }
+    public abstract double calculatePerimeter();
 
     /**
      * Check if any of args are not below 0.
