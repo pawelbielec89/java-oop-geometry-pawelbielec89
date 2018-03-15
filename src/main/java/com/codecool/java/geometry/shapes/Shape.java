@@ -31,9 +31,9 @@ public abstract class Shape {
      * Check if any of args are not below 0.
      * Throws IllegalArgumentException if any of the parameters is 0 or less.
      * @param args
-     * @return true if any of args are not below 0
+     * @return true if any of args are greater than 0
      */
-    public static boolean checkIfArgsNotBelowZero(float... args) {
+    public static boolean checkIfArgsGreaterThanZero(float... args) {
         throw new NotImplementedException();
     }
 

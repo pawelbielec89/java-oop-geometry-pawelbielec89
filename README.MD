@@ -72,8 +72,8 @@ Returns the perimeter of the shape.
 Returns information about given shape as string.
 
 #### Static methods
-##### ```boolean checkIfArgsNotBelowZero(float... args)```
-That method should be used in constructor of each specific shape. Returns True if any of args are not below 0. Should raise `IllegalArgumentException` if any of the parameters is 0 or less (e.g. circle with negative radius doesn't exist).
+##### ```boolean checkIfArgsGreaterThanZero(float... args)```
+That method should be used in constructor of each specific shape. Returns true if any of args are greater than 0. Should raise `IllegalArgumentException` if any of the parameters is 0 or less (e.g. circle with negative radius doesn't exist).
 ##### ```String getAreaFormula()```
 Returns formula for the area of the shape as a string.
 ##### ```String getPerimeterFormula()```
