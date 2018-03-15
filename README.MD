@@ -12,6 +12,7 @@ In order to help Zigy you have to:
 - [ ] Implement `Main` class.
 - [ ] You are allowed to implement your own classes. Remember about clean code.
 - [ ] Explain why Linus designed some methods to be static methods instead of instance methods.
+- [ ] All tests must pass.
 - [ ] Add UML.png file containing UML class diagram of classes from `shapes` and `containers` packages
 - [ ] Focus most on the OOP not the ui.
 
