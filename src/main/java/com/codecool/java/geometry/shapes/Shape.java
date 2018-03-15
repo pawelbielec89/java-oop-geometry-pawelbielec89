@@ -33,7 +33,7 @@ public abstract class Shape {
 
     /**
      * Check if any of args are not below 0.
-     * Throws IllegalArgumentException if any of the parameters is below 0.
+     * Throws IllegalArgumentException if any of the parameters is 0 or less.
      * @param args
      * @return true if any of args are not below 0
      */

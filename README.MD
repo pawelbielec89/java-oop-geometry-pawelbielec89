@@ -73,7 +73,7 @@ Returns information about given shape as string.
 
 #### Static methods
 ##### ```boolean checkIfArgsNotBelowZero(float... args)```
-Returns True if any of args are not below 0. Should raise `ValueError` if any of the parameters is below 0 (e.g. circle with negative radius doesn't exist).
+That method should be used in constructor of each specific shape. Returns True if any of args are not below 0. Should raise `IllegalArgumentException` if any of the parameters is 0 or less (e.g. circle with negative radius doesn't exist).
 ##### ```String getAreaFormula()```
 Returns formula for the area of the shape as a string.
 ##### ```String getPerimeterFormula()```
