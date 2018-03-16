@@ -255,3 +255,55 @@ Help Zigy even more and implement quiz feature. This feature should generate ran
 
 
 You can also add more shapes to the geometry class.
+
+
+## Running your app
+As we started to use packages, source files are placed deep in the hierarchy in different directories. We will show you one of possible ways to handle this.
+
+1. Save paths to all source files with your production code to a file:
+
+    `find src/main -name "*.java" > production.txt`
+
+2. Create output directory for compiled classes of your production code (thanks to `-p` parameter it will be created only if it does not exist without an error if it exists already):
+
+    `mkdir -p out/production`
+
+3. Compile all source files saved in `production.txt` file into specified directory:
+
+    `javac @production.txt -d out/production`
+
+4. To run `Main` class you have run `java` command with the path to all compiled files and specified name of class including the name of the package it belongs to:
+
+    `java -cp out/production/ com.codecool.java.geometry.Main`
+
+If you want to run your program after each change, it will be annoying to do all those steps all the time.  You can do all steps needed to compile your code in one line by joining commands with `&&`:
+
+`find src/main -name "*.java" > production.txt &amp;&amp; mkdir -p out/production &amp;&amp; javac @production.txt -d out/production`
+
+If you want to run it right after compiling, just join the above line add command that is used to run your program with another `&amp;&amp;`.
+
+## Running tests
+You will need to download jar file from: https://mvnrepository.com/artifact/org.junit.platform/junit-platform-console-standalone
+You can try with the latest version. Put this file to `lib` directory in your project and then you will be able to run the test suite,
+e.g. (adjust for your version number):
+
+`java -jar lib/junit-platform-console-standalone-1.1.0.jar -cp out/test/:out/production/ --scan-classpath`
+
+Of course, you need to compile the *Tests.java files first:
+
+1. Save paths to all source files with test code to a file:
+    
+    `find src/test -name "*.java" > test.txt`
+
+2. Create output directory for compiled classes of test code:
+
+    `mkdir -p out/test`
+
+3. Show compiler directories to look for your JUnit jar and your compiled production classes and compile all source files saved in `test.txt` file into specified directory:
+
+    `javac -cp lib/\*:out/production:. @test.txt -d out/test`
+
+
+If you want to compile and run tests in one go, just join all commands with `&&`:
+
+`find src/test -name "*.java" > test.txt &amp;&amp; mkdir -p out/test &amp;&amp; javac -cp lib/\*:out/production:. @test.txt -d out/test &amp;&amp; java -jar lib/junit-platform-console-standalone-1.1.0.jar -cp out/test/:out/production/ --scan-classpath`
