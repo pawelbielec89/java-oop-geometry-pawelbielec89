@@ -278,9 +278,9 @@ As we started to use packages, source files are placed deep in the hierarchy in 
 
 If you want to run your program after each change, it will be annoying to do all those steps all the time.  You can do all steps needed to compile your code in one line by joining commands with `&&`:
 
-`find src/main -name "*.java" > production.txt &amp;&amp; mkdir -p out/production &amp;&amp; javac @production.txt -d out/production`
+`find src/main -name "*.java" > production.txt && mkdir -p out/production && javac @production.txt -d out/production`
 
-If you want to run it right after compiling, just join the above line add command that is used to run your program with another `&amp;&amp;`.
+If you want to run it right after compiling, just join the above line add command that is used to run your program with another `&&`.
 
 ## Running tests
 You will need to download jar file from: https://mvnrepository.com/artifact/org.junit.platform/junit-platform-console-standalone
@@ -306,4 +306,4 @@ Of course, you need to compile the *Tests.java files first:
 
 If you want to compile and run tests in one go, just join all commands with `&&`:
 
-`find src/test -name "*.java" > test.txt &amp;&amp; mkdir -p out/test &amp;&amp; javac -cp lib/\*:out/production:. @test.txt -d out/test &amp;&amp; java -jar lib/junit-platform-console-standalone-1.1.0.jar -cp out/test/:out/production/ --scan-classpath`
+`find src/test -name "*.java" > test.txt && mkdir -p out/test && javac -cp lib/\*:out/production:. @test.txt -d out/test && java -jar lib/junit-platform-console-standalone-1.1.0.jar -cp out/test/:out/production/ --scan-classpath`
