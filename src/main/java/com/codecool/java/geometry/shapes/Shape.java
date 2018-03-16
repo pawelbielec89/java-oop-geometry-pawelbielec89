@@ -1,7 +1,7 @@
 package com.codecool.java.geometry.shapes;
 
 
-import sun.reflect.generics.reflectiveObjects.NotImplementedException;
+import com.codecool.java.NotYetImplementedException;
 
 /**
  * This is a abstract class representing geometrical shape.
@@ -26,7 +26,7 @@ public abstract class Shape {
      * @return true if any of args are greater than 0
      */
     public static boolean checkIfArgsGreaterThanZero(float... args) {
-        throw new NotImplementedException();
+        throw new NotYetImplementedException();
     }
 
     /**
@@ -34,7 +34,7 @@ public abstract class Shape {
      * @return area formula
      */
     public static String getAreaFormula() {
-        throw new NotImplementedException();
+        throw new NotYetImplementedException();
     }
 
     /**
@@ -42,6 +42,6 @@ public abstract class Shape {
      * @return perimeter formula
      */
     public static String getPerimeterFormula() {
-        throw new NotImplementedException();
+        throw new NotYetImplementedException();
     }
 }
