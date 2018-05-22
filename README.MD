@@ -16,8 +16,6 @@ In order to help Zigy you have to:
 - [ ] Add UML.png file containing UML class diagram of classes from `shapes` and `containers` packages
 - [ ] Focus most on the OOP not the ui.
 
-Hint: you can reuse code from the previous assignments.
-
 # Specifications
 Here you can find information what you have to implement.
 
@@ -70,16 +68,16 @@ Returns the area of the shape.
 Returns the perimeter of the shape.
 ##### ```String toString()```
 Returns information about given shape as string.
-
-#### Static methods
-##### ```boolean checkIfArgsGreaterThanZero(float... args)```
-That method should be used in constructor of each specific shape. Returns true if any of args are greater than 0. Should raise `IllegalArgumentException` if any of the parameters is 0 or less (e.g. circle with negative radius doesn't exist).
 ##### ```String getAreaFormula()```
 Returns formula for the area of the shape as a string.
 ##### ```String getPerimeterFormula()```
 Returns formula for the perimeter of the shape.
 
-Why these methods should be static methods? Edit this readme and give answer below:  
+
+#### Static methods
+##### ```boolean checkIfArgsGreaterThanZero(float... args)```
+That method should be used in constructor of each specific shape. Returns true if any of args are greater than 0. Should raise `IllegalArgumentException` if any of the parameters is 0 or less (e.g. circle with negative radius doesn't exist).
+
 ...........................
 
 ### Circle Class
@@ -214,7 +212,7 @@ Adds shape to shapes list.
 ######  Arguments
 * `shape`
   * description: object to be added to the shapes list
-  
+
 ##### `Shape getShapeAt(int index)`
 Gets shape stored in `shapes` list under specified index.
 ######  Arguments
@@ -292,7 +290,7 @@ e.g. (adjust for your version number):
 Of course, you need to compile the *Tests.java files first:
 
 1. Save paths to all source files with test code to a file:
-    
+
     `find src/test -name "*.java" > test.txt`
 
 2. Create output directory for compiled classes of test code:
