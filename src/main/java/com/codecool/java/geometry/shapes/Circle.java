@@ -1,23 +1,21 @@
 package com.codecool.java.geometry.shapes;
 
 public class Circle extends Shape {
-    float r;
-    String name;
 
-    public Circle(float r) {
-        if (checkIfArgsGreaterThanZero(r)) {
-            this.r = r;
+    public Circle(float a) {
+        if (checkIfArgsGreaterThanZero(a)) {
+            this.a = a;
         }
 
         this.name = "Circle";
     }
 
     public double calculateArea() {
-        return Math.PI * r * r;
+        return Math.PI * a * a;
     }
 
     public double calculatePerimeter() {
-        return 2 * Math.PI * r;
+        return 2 * Math.PI * a;
     }
 
     public String getAreaFormula() {
@@ -29,7 +27,7 @@ public class Circle extends Shape {
     }
 
     public String toString() {
-        String radius = Float.toString(r);
+        String radius = Float.toString(a);
         return (this.name + ", r = " + radius);
     }
 

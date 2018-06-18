@@ -1,8 +1,6 @@
 package com.codecool.java.geometry.shapes;
 
 public class EquilateralTriangle extends Triangle {
-    float a;
-    String name;
 
     public EquilateralTriangle(float a) {
         if (checkIfArgsGreaterThanZero(a)) {

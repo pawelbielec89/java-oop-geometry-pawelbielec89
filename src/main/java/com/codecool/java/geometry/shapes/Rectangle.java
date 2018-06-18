@@ -1,9 +1,7 @@
 package com.codecool.java.geometry.shapes;
 
 public class Rectangle extends Shape {
-    float a;
     float b;
-    String name;
 
     public Rectangle(float a, float b) {
         if (checkIfArgsGreaterThanZero(a, b)) {

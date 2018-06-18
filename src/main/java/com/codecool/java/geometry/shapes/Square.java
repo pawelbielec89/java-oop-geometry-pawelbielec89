@@ -1,8 +1,6 @@
 package com.codecool.java.geometry.shapes;
 
 public class Square extends Rectangle {
-    float a;
-    String name;
 
     public Square(float a) {
         if (checkIfArgsGreaterThanZero(a)) {

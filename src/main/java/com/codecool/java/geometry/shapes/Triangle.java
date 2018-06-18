@@ -2,10 +2,8 @@ package com.codecool.java.geometry.shapes;
 
 
 public class Triangle extends Shape {
-    public float a;
-    public float b;
-    public float c;
-    public String name;
+    private float b;
+    private float c;
 
     public Triangle(float a, float b, float c) {
         if (checkIfArgsGreaterThanZero(a, b, c)) {
@@ -18,6 +16,7 @@ public class Triangle extends Shape {
 
     public Triangle() {
     }
+
 
     public double calculateArea() {
         float s = (a + b + c) / 2;

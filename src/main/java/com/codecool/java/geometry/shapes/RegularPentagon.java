@@ -1,8 +1,6 @@
 package com.codecool.java.geometry.shapes;
 
 public class RegularPentagon extends Shape {
-    float a;
-    String name;
 
     public RegularPentagon(float a) {
         if (checkIfArgsGreaterThanZero(a)) {

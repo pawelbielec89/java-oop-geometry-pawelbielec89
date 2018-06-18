@@ -6,7 +6,8 @@ import com.codecool.java.NotYetImplementedException;
  * This is a abstract class representing geometrical shape.
  */
 public abstract class Shape {
-
+    protected float a;
+    protected String name;
     /**
      * Calculates shape's area.
      *
